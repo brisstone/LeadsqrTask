@@ -15,12 +15,7 @@ const ContentBox = styled('div')(({ theme }) => ({
     },
 }))
 
-const PlainContentBox = {
-    margin: '60px',
-    // [theme.breakpoints.down('sm')]: {
-    //     margin: '16px',
-    // },
-}
+
 
 export default function Users() {
 
@@ -177,7 +172,7 @@ export default function Users() {
     return (
         <div style={{ backgroundColor: '', marginTop: '90px' }}>
             <Fragment>
-                <div style={PlainContentBox}>
+                <div className='PlainContentBox' >
                     <Box
                         sx={{
                             display: 'flex',
@@ -208,6 +203,7 @@ export default function Users() {
                             alignItems: 'center',
                             columnGap: '10px',
                             borderRadius: 1,
+                            flexWrap:'wrap'
                         }}
                     >
                         <Box style={pageTitle}>User Details</Box>

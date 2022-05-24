@@ -13,6 +13,8 @@ export default function ButtonComp(props) {
                     height: '40px',
                     borderRadius: '8px',
                     padding: '1rem 1rem',
+                    fontSize:'12px',
+                    marginTop:'1rem'
                 }}
             >
                 {text}

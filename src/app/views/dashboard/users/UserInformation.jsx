@@ -40,16 +40,7 @@ const userNameStyle = {
     textTransform: 'uppercase',
 }
 
-const userValueStyle = {
-    fontFamily: 'Work Sans',
-    fontDtyle: 'normal',
-    fontWeight: '500',
-    fontSize: '16px',
-    lineHeight: '19px',
-    marginTop: '5px',
 
-    color: '#545F7D',
-}
 
 const userSection = {
     fontFamily: 'Work Sans',
@@ -75,7 +66,9 @@ export default function UserInformation({ user }) {
             }}
         >
             <ContentBox
-                style={{ backgroundColor: '#FFFFFF', padding: '0rem 1.5rem' }}
+                style={{ backgroundColor: '#FFFFFF', 
+                padding: '0rem .5rem'
+             }}
                 className="analytics"
             >
                 <Box style={userSection}>Personal Information</Box>
@@ -87,29 +80,29 @@ export default function UserInformation({ user }) {
                 >
                     <Grid item lg={2.4} md={2.4} sm={2.4} xs={6}>
                         <Box style={userNameStyle}>FULL NAME</Box>
-                        <Box style={userValueStyle}>
+                        <Box className="userValueStyle">
                             {user?.organization.name}
                         </Box>
                     </Grid>
                     <Grid item lg={2.4} md={2.4} sm={2.4} xs={6}>
                         {' '}
                         <Box style={userNameStyle}>Phone Number</Box>
-                        <Box style={userValueStyle}>{user?.phonenumber}</Box>
+                        <Box className="userValueStyle">{user?.phonenumber}</Box>
                     </Grid>
                     <Grid item lg={2.4} md={2.4} sm={2.4} xs={6}>
                         {' '}
                         <Box style={userNameStyle}>Email Address</Box>
-                        <Box style={userValueStyle}>{user?.email}</Box>
+                        <Box className="userValueStyle">{user?.email}</Box>
                     </Grid>
                     <Grid item lg={2} md={2} sm={2} xs={6}>
                         {' '}
                         <Box style={userNameStyle}>Bvn</Box>
-                        <Box style={userValueStyle}>07060780922</Box>
+                        <Box className="userValueStyle">07060780922</Box>
                     </Grid>
                     <Grid item lg={2} md={2} sm={2} xs={6}>
                         {' '}
                         <Box style={userNameStyle}>Gender</Box>
-                        <Box style={userValueStyle}>{user?.gender}</Box>
+                        <Box className="userValueStyle">{user?.gender}</Box>
                     </Grid>
                 </Grid>
                 <Grid
@@ -120,15 +113,15 @@ export default function UserInformation({ user }) {
                 >
                     <Grid item lg={2.4} md={2.4} sm={2.4} xs={4}>
                         <Box style={userNameStyle}>Marital status</Box>
-                        <Box style={userValueStyle}>Single</Box>
+                        <Box className="userValueStyle">Single</Box>
                     </Grid>
                     <Grid item lg={2.4} md={2.4} sm={2.4} xs={4}>
                         <Box style={userNameStyle}>Children</Box>
-                        <Box style={userValueStyle}>None</Box>
+                        <Box className="userValueStyle">None</Box>
                     </Grid>
                     <Grid item lg={2.4} md={2.4} sm={2.4} xs={4}>
                         <Box style={userNameStyle}>Type of residence</Box>
-                        <Box style={userValueStyle}>Parent’s Apartment</Box>
+                        <Box className="userValueStyle">Parent’s Apartment</Box>
                     </Grid>
                 </Grid>
                 <Divider />
@@ -142,19 +135,19 @@ export default function UserInformation({ user }) {
                 >
                     <Grid item lg={3} md={3} sm={3} xs={6}>
                         <Box style={userNameStyle}>level of education</Box>
-                        <Box style={userValueStyle}>B.Sc</Box>
+                        <Box className="userValueStyle">B.Sc</Box>
                     </Grid>
                     <Grid item lg={3} md={3} sm={3} xs={6}>
                         <Box style={userNameStyle}>employment status</Box>
-                        <Box style={userValueStyle}>Employed</Box>
+                        <Box className="userValueStyle">Employed</Box>
                     </Grid>
                     <Grid item lg={3} md={3} sm={3} xs={6}>
                         <Box style={userNameStyle}>sector of employment</Box>
-                        <Box style={userValueStyle}>FinTech</Box>
+                        <Box className="userValueStyle">FinTech</Box>
                     </Grid>
                     <Grid item lg={3} md={3} sm={3} xs={6}>
                         <Box style={userNameStyle}>Duration of employment</Box>
-                        <Box style={userValueStyle}>2 years</Box>
+                        <Box className="userValueStyle">2 years</Box>
                     </Grid>
                 </Grid>
 
@@ -166,17 +159,17 @@ export default function UserInformation({ user }) {
                 >
                     <Grid item lg={3} md={3} sm={3} xs={6}>
                         <Box style={userNameStyle}>office email</Box>
-                        <Box style={userValueStyle}>{user?.email}</Box>
+                        <Box className="userValueStyle">{user?.email}</Box>
                     </Grid>
                     <Grid item lg={3} md={3} sm={3} xs={6}>
                         <Box style={userNameStyle}>Monthly income</Box>
-                        <Box style={userValueStyle}>
+                        <Box className="userValueStyle">
                             ₦200,000.00- ₦400,000.00
                         </Box>
                     </Grid>
                     <Grid item lg={3} md={3} sm={3} xs={6}>
                         <Box style={userNameStyle}>loan repayment</Box>
-                        <Box style={userValueStyle}>40,000</Box>
+                        <Box className="userValueStyle">40,000</Box>
                     </Grid>
                 </Grid>
                 <Divider />
@@ -191,17 +184,17 @@ export default function UserInformation({ user }) {
                 >
                     <Grid item lg={2.4} md={2.4} sm={2.4} xs={6}>
                         <Box style={userNameStyle}>Twitter</Box>
-                        <Box style={userValueStyle}>@grace_effiom</Box>
+                        <Box className="userValueStyle">@grace_effiom</Box>
                     </Grid>
                     <Grid item lg={2.4} md={2.4} sm={2.4} xs={6}>
                         {' '}
                         <Box style={userNameStyle}>Facebook</Box>
-                        <Box style={userValueStyle}>Grace Effiom</Box>
+                        <Box className="userValueStyle">Grace Effiom</Box>
                     </Grid>
                     <Grid item lg={2.4} md={2.4} sm={2.4} xs={6}>
                         {' '}
                         <Box style={userNameStyle}>Instagram</Box>
-                        <Box style={userValueStyle}>Grace Effiom</Box>
+                        <Box className="userValueStyle">Grace Effiom</Box>
                     </Grid>
                 </Grid>
 
@@ -215,22 +208,22 @@ export default function UserInformation({ user }) {
                 >
                     <Grid item lg={2.4} md={2.4} sm={2.4} xs={6}>
                         <Box style={userNameStyle}>FULL NAME</Box>
-                        <Box style={userValueStyle}>Debby Ogana</Box>
+                        <Box className="userValueStyle">Debby Ogana</Box>
                     </Grid>
                     <Grid item lg={2.4} md={2.4} sm={2.4} xs={6}>
                         {' '}
                         <Box style={userNameStyle}>Phone Number</Box>
-                        <Box style={userValueStyle}>07060780922</Box>
+                        <Box className="userValueStyle">07060780922</Box>
                     </Grid>
                     <Grid item lg={2.4} md={2.4} sm={2.4} xs={6}>
                         {' '}
                         <Box style={userNameStyle}>Email Address</Box>
-                        <Box style={userValueStyle}>Grace Effiom</Box>
+                        <Box className="userValueStyle">Grace Effiom</Box>
                     </Grid>
                     <Grid item lg={2} md={2} sm={2} xs={4}>
                         {' '}
                         <Box style={userNameStyle}>Relationship</Box>
-                        <Box style={userValueStyle}>Sister</Box>
+                        <Box className="userValueStyle">Sister</Box>
                     </Grid>
                 </Grid>
 
@@ -243,22 +236,22 @@ export default function UserInformation({ user }) {
                 >
                     <Grid item lg={2.4} md={2.4} sm={2.4} xs={6}>
                         <Box style={userNameStyle}>FULL NAME</Box>
-                        <Box style={userValueStyle}>Grace Effiom</Box>
+                        <Box className="userValueStyle">Grace Effiom</Box>
                     </Grid>
                     <Grid item lg={2.4} md={2.4} sm={2.4} xs={6}>
                         {' '}
                         <Box style={userNameStyle}>Phone Number</Box>
-                        <Box style={userValueStyle}>Grace Effiom</Box>
+                        <Box className="userValueStyle">Grace Effiom</Box>
                     </Grid>
                     <Grid item lg={2.4} md={2.4} sm={2.4} xs={6}>
                         {' '}
                         <Box style={userNameStyle}>Email Address</Box>
-                        <Box style={userValueStyle}>Grace Effiom</Box>
+                        <Box className="userValueStyle">Grace Effiom</Box>
                     </Grid>
                     <Grid item lg={2} md={2} sm={2} xs={6}>
                         {' '}
                         <Box style={userNameStyle}>Relationship</Box>
-                        <Box style={userValueStyle}>Sister</Box>
+                        <Box className="userValueStyle">Sister</Box>
                     </Grid>
                 </Grid>
             </ContentBox>

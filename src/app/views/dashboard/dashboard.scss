@@ -150,6 +150,28 @@
     padding: 6rem 4rem;
 }
 
+
+.PlainContentBox{
+    margin:60px
+
+   
+}
+
+
+
+
+.userValueStyle{
+    font-family:Work Sans ;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 5px;
+    color: #545F7D;
+}
+
+
+
 .ant-table{
     font-size: 13px !important;
 }
@@ -197,6 +219,19 @@
 
     .users_tab{
         display: none;
+    }
+
+    .PlainContentBox{
+        margin:0px;
+        margin: 0 2rem;
+    
+       
+    }
+
+    .userValueStyle{
+       
+        font-size: 13px;
+       
     }
 }
 
