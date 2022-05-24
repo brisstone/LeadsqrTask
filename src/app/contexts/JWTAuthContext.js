@@ -73,7 +73,7 @@ const AuthContext = createContext({
 })
 
 export const AuthProvider = ({ children }) => {
-    const [state, dispatch] = useReducer(reducer, initialState)
+   const [state, dispatch] = useReducer(reducer, initialState)
 
     const login = async (email, password) => {
         const response = await axios.post('/api/auth/login', {
